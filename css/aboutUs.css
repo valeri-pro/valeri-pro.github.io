@@ -1,0 +1,742 @@
+/* main > div.bg-bubbles {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+} */
+
+/*ОБЩЕЕ*/
+html,
+body {
+  margin: 0;
+}
+body {
+  min-width: 1400px;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+/*ФЛЕКСЫ*/
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.grow {
+  flex-grow: 1;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/*ВЫРАВНИВАНИЕ*/
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*КОНТЕЙНЕРЫ*/
+.container2 {
+  width: 100%;
+  height: 100vh;
+}
+.mini {
+  width: 1100px;
+  height: 620px;
+}
+.mini2 {
+  width: 1400px;
+  height: 520px;
+}
+.mini3 {
+  width: 700px;
+  height: 620px;
+}
+.mini4 {
+  width: 550px;
+  height: 90vh;
+}
+.content {
+  width: 520px;
+  height: 580px;
+}
+
+/*ШРИФТЫ*/
+.font-54px-white {
+  font-size: 54px;
+  color: white;
+}
+.font-20px {
+  font-size: 20px;
+}
+.font-24px {
+  font-size: 24px;
+}
+.font-50px {
+  font-size: 50px;
+  margin: 0;
+}
+.bold {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-family: "Cabin Condensed", sans-serif;
+  font-family: "Cinzel", serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Sulphur Point", sans-serif;
+}
+
+/*КАРТИНКИ*/
+img {
+  width: 490px;
+  height: 580px;
+}
+
+/*СПИСКИ*/
+ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
+/*ССЫЛКИ*/
+a {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/*ДРУГОЕ*/
+h1 {
+  text-align: center;
+}
+h5 {
+  font-size: 50px;
+  margin: 5px;
+}
+p {
+  line-height: 1.6;
+}
+.underline {
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  padding-bottom: 0.2em;
+  font-size: 20px;
+  background: linear-gradient(
+      90deg,
+      currentColor 33.33333%,
+      transparent 0 66.66667%,
+      currentColor 0
+    )
+    var(--d, 0) 100%/300% 1px no-repeat;
+}
+
+/*ПЕРВЫЙ*/
+.container__first {
+  margin-top: -100px;
+}
+.container__image {
+  background-image: url(https://pbs.twimg.com/media/DKltjGgVAAA_p3N.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.container__image h1 {
+  font-size: 100px;
+}
+.strip {
+  background-color: black;
+  height: 50px;
+  margin-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.strip p {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 7px;
+  padding-right: 15px;
+}
+.container__for-title {
+  position: absolute;
+  top: 0;
+  min-width: 1400px;
+}
+.title {
+  margin: 15px auto;
+  z-index: 3;
+  color: white;
+  font-size: 120px;
+  text-align: center;
+  padding-top: 70px;
+}
+
+/*ВТОРОЙ*/
+.container__second {
+  width: 100%;
+  height: 100vh;
+}
+.container__second .mini3 p {
+  margin: 10px;
+}
+
+/*ТРЕТИЙ с каруселью*/
+.container__image2 {
+  background-image: url(https://cdn.shopify.com/s/files/1/0538/7609/7209/files/colli_ripani_11.jpg?v=1616772003);
+  background-repeat: no-repeat;
+}
+
+/*ЧЕТВЕРТЫЙ*/
+
+img.special {
+  width: 835px;
+  height: 416px;
+}
+
+div.container-fourth p {
+  margin-bottom: 24px;
+}
+.font-43px {
+  font-size: 40px;
+}
+
+/*ПЯТЫЙ*/
+div.container__fifth {
+  background-color: #dce3e2;
+  text-align: left;
+}
+.container__fifth p {
+  font-size: 20px;
+  margin: 10px;
+}
+
+/*ШЕСТОЙ*/
+div.container-sixth {
+  background-image: url(https://cdn.shopify.com/s/files/1/0538/7609/7209/files/cr_scarico_uve-62_1920x880.jpg?v=1616686159);
+  background-size: cover;
+  height: 576px;
+  width: 100%;
+}
+
+/*PREfooter*/
+div.prefooter a {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  list-style-type: none;
+  width: 34%;
+  height: 150px;
+  border-bottom: 2px solid black;
+  background-color: white;
+  border-top: none;
+  border-collapse: collapse;
+}
+div.prefooter a:nth-child(2) {
+  border-left: 2px solid;
+  border-right: 2px solid;
+}
+div.prefooter {
+  height: 150px;
+  width: 100%;
+}
+.prefooter a:hover {
+  background-color: rgb(220, 227, 226);
+}
+div.prefooter ul a li {
+  height: 150px;
+}
+/* */
+li a {
+  text-decoration: none;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.height__for-li {
+  height: 400px;
+}
+
+.bold {
+  font-weight: bold;
+}
+button.btn-dark a {
+  color: white;
+}
+
+/*ФУТЕР*/
+/*ФУТЕР*/
+.logo {
+  display: block;
+  width: 120px;
+  height: 56px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://cdn.shopify.com/s/files/1/0538/7609/7209/t/2/assets/logo-footer.svg);
+  flex-shrink: 0;
+  margin-right: 4rem;
+}
+.footer {
+  height: 400px;
+}
+.footer-end {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.footer-end2 {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-end span {
+  line-height: 15px;
+}
+small {
+  font-size: 15px;
+}
+div.flex-start {
+  height: 300px;
+  padding-top: 30px;
+  align-items: flex-start;
+}
+
+.footer h3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 0.3em;
+  margin-top: 0;
+  font-family: "Cabin Condensed", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Sulphur Point", sans-serif;
+  font-style: italic;
+}
+a.bold ul li {
+  margin-top: 20px;
+}
+
+/*МЕНЮ*/
+/*МЕНЮ ФИКСИРОВАННОЕ*/
+
+.container {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-primary {
+  width: 1300px;
+  height: 100px;
+  z-index: 5;
+}
+
+.header {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  order: -1;
+  height: 100px;
+  background-color: white;
+  border-top: 6px solid blue;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.16);
+}
+.header nav > div {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+
+.header nav > div > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 35%;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.header a.brand {
+  display: flex;
+  align-items: center;
+  width: 230px;
+  height: 56px;
+  font-size: 0;
+  color: transparent;
+  transition: height 0.2s linear;
+}
+.header nav > div > ul:last-child {
+  justify-content: flex-end;
+}
+.header nav > div > ul > li {
+  display: inline-flex;
+  align-items: center;
+}
+
+ul.nav__icon li {
+  display: flex;
+  justify-content: space-evenly;
+}
+li > a > svg {
+  vertical-align: middle;
+}
+
+.header nav > div > ul > li > a {
+  padding: 1.6em 0;
+  margin: 0 20px;
+  display: block;
+  font-family: Garamond Premiere Pro;
+  line-height: 40px;
+}
+/*МЕНЮ ВЫПАДАЮЩЕЕ*/
+/*БЭКГРАУНД к ссылка в всплывающем меню*/
+.discoverOurOffers {
+  background-image: url(https://cdn.shopify.com/s/files/1/0538/7609/7209/files/offerte.jpg);
+  padding: 80px 50px;
+  background-size: cover;
+  color: white;
+}
+.discoverThePairings {
+  background-image: url(https://cdn.shopify.com/s/files/1/0538/7609/7209/files/abbinamenti.jpg);
+  padding: 80px 50px;
+  background-size: cover;
+  color: white;
+}
+.bookAVisit {
+  background-image: url(https://cdn.shopify.com/s/files/1/0538/7609/7209/files/prenota.jpg);
+  padding: 80px 90px;
+  background-size: cover;
+  color: white;
+}
+.ourShops {
+  background-image: url(https://cdn.shopify.com/s/files/1/0538/7609/7209/files/punti-vendita.jpg);
+  padding: 80px 90px;
+  background-size: cover;
+  color: white;
+}
+
+div.submenu__area a {
+  display: flex;
+  align-self: center;
+}
+
+.header nav > div > ul > li .submenu .submenu__area {
+  width: 26%;
+  flex-shrink: 0;
+}
+.header nav > div > ul > li .submenu .submenu__area > a:only-child {
+  padding: 80px 50px;
+}
+.header nav > div > ul > li .submenu .submenu__area > a:only-child {
+  font-size: 28px;
+  line-height: 1.14;
+  background-color: #000;
+  background-size: cover;
+  background-image: var(--bg);
+  color: #fff;
+  text-transform: none;
+  padding: 80px 30px;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "Cabin Condensed", sans-serif;
+  font-family: "Cinzel", serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-family: "Sulphur Point", sans-serif;
+}
+
+div.submenu > div.container {
+  width: 100wv;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+div.submenu_show > div.container {
+  width: 100wv;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  color: #000;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  margin-top: 0;
+  right: 0;
+  padding: 2em 0;
+  text-align: left;
+  background: white;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.16);
+  z-index: 1;
+}
+
+.submenu_show {
+  display: block;
+  position: absolute;
+  color: #000;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  margin-top: 0;
+  right: 0;
+  padding: 2em 0;
+  text-align: left;
+  background: white;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.16);
+}
+
+div.submenu_show > div.container {
+  width: 100wv;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+/* */
+.dialog-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-container.shown {
+  display: flex;
+  z-index: 20;
+  /* animation: opacity 0.5s ease; */
+}
+
+.dialog {
+  width: 500px;
+  background: white;
+  border-radius: 10px;
+}
+
+.dialog-content {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: justify;
+  padding: 45px;
+}
+
+button.popUP {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button.close {
+  border-radius: 0 0 10px 10px;
+  width: 500px;
+}
+
+.header_hide {
+  z-index: 20;
+}
+
+/**/
+button.bucketButton {
+  padding: 0;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 20px;
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*КОРЗИНА*/
+
+div.bucket {
+  display: none;
+  position: fixed;
+  background: white;
+  right: 0;
+  bottom: 0;
+  width: 600px;
+  min-width: 600px;
+  height: 100vh;
+  z-index: 40;
+  overflow-y: unset;
+  padding: 20px;
+  border-left: 1px solid blue;
+}
+
+.bucket.opened {
+  display: flex;
+  flex-direction: column;
+}
+
+div.header_for-bucket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  font-size: 18px;
+}
+
+p.product-action {
+  text-decoration: underline;
+}
+
+div.footer_for-bucket {
+  border-top: 2px solid black;
+  font-size: 18px;
+}
+
+div.footer_for-bucket button {
+  width: 560px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+div#bucketItemsContainer {
+  overflow-y: auto;
+  scrollbar-width: 0;
+  height: 80vh;
+}
+
+picture img.image-for-bucket {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  width: 80px;
+  height: 100px;
+  display: block;
+  background: rgba(220, 227, 226, 0.24);
+  padding: 5px;
+  position: relative;
+  z-index: 0;
+  margin-right: 20px;
+}
+
+div#dark-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+div#dark-container.shown2 {
+  display: block;
+  z-index: 30;
+}
+
+div#bucketItemsContainer div.card__price {
+  padding-left: 15px;
+  width: 150px;
+  font-weight: bold;
+  font-size: 18px;
+}
+div#bucketItemsContainer h3.card__title {
+  width: 350px;
+}
+
+/*COUNTER*/
+
+.container__for-counter2 {
+  width: 90px;
+  height: 40px;
+  border: 1px solid black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+  border: 2px solid gray;
+  margin-right: 20px;
+}
+div#counter2 {
+  font-size: 20px;
+}
+
+.container__for-counter2 svg {
+  vertical-align: middle;
+  fill: gray;
+}
+
+div.totalBucketPrice {
+  font-size: 18px;
+  font-weight: bolder;
+  padding-right: 20px;
+  padding-left: 20px;
+}
