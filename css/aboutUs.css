@@ -567,7 +567,7 @@ div.submenu_show > div.container {
 
 .dialog-container.shown {
   display: flex;
-  z-index: 20;
+  z-index: 30;
   /* animation: opacity 0.5s ease; */
 }
 
