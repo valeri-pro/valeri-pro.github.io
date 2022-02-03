@@ -688,7 +688,7 @@ a.bold ul li {
 
 .dialog-container.shown {
   display: flex;
-  z-index: 20;
+  z-index: 30;
   /* animation: opacity 0.5s ease; */
 }
 
